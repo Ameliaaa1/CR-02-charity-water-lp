@@ -7,31 +7,63 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><img src="img/charity-water-logo.png" alt="charity: water" width="280"></header>
+  <!-- The logo and photograph are the same assets used in the Canva design. -->
+  <header class="page-width brand-header">
+    <a class="brand-link" href="https://www.charitywater.org/" aria-label="Visit charity: water">
+      <img src="img/charity-water-logo.png" width="700" height="130" alt="charity: water">
+    </a>
+  </header>
+
   <main>
-    <section class="hero">
-      <h1>Small Gift.<br>Real Change.</h1>
-      <p>Your donation can help bring clean, safe water to people who need it. See where your support goes and make every dollar count.</p>
-      <a href="https://www.charitywater.org/donate">Give $5. Make an Impact.</a>
+    <section class="page-width hero" aria-labelledby="headline">
+      <p class="eyebrow">A student-powered water campaign</p>
+      <h1 id="headline">Small Gift.<br>Real Change.</h1>
+      <p class="subheadline">Your donation can help bring clean, safe water to people who need it. See where your support goes and make every dollar count.</p>
+      <div class="hero-action">
+        <a class="donate-button" href="https://www.charitywater.org/donate">Give $5. Make an Impact.</a>
+        <p>Start small. Change lives.</p>
+      </div>
     </section>
-    <section class="story">
-      <img src="img/ethiopia-2019.jpg" alt="People collecting water at a hand pump in Ethiopia">
-      <p>Ethiopia, 2019 · Photograph by Cubby Graham / charity: water</p>
-      <p>A water pump brings the cause into focus: real people collecting water for everyday life.</p>
+
+    <!-- A real water point illustrates the story without inventing a biography. -->
+    <section class="page-width story" aria-label="Clean water in everyday life">
+      <figure>
+        <img class="hero-photo" src="img/ethiopia-2019.jpg" width="1600" height="1067" alt="People collecting water at a hand pump in Ethiopia, with yellow water containers nearby">
+        <figcaption>Ethiopia, 2019 · Photograph by Cubby Graham / charity: water</figcaption>
+      </figure>
+      <p class="story-copy">In this photograph from Ethiopia, water is being collected at a hand pump. Behind every water point is a community, and each gift can join others to help fund clean water projects.</p>
     </section>
-    <section class="impact">
-      <h2>100% of public donations fund clean water projects.</h2>
-      <p>Projects are documented with photos and GPS coordinates.</p>
+
+    <section class="impact" aria-labelledby="impact-title">
+      <div class="page-width impact-content">
+        <p class="eyebrow">Your gift. Clear proof.</p>
+        <div class="impact-proof">
+          <h2 id="impact-title"><span class="percentage">100%</span><span class="impact-statement">of public donations fund<br>clean water projects.</span></h2>
+          <p>Projects are documented with photos and GPS coordinates. <a href="https://www.charitywater.org/our-work">See the impact</a></p>
+        </div>
+      </div>
     </section>
-    <section class="giving">
-      <h2>Every gift matters.</h2>
+
+    <section class="page-width giving" aria-labelledby="giving-title">
+      <h2 id="giving-title">Every gift matters.</h2>
       <p>Start with $5. Your gift joins others to help fund clean water projects.</p>
       <p>Invite a friend and bring your campus community into the change.</p>
     </section>
-    <section class="call-to-action">
-      <h2>Be part of the change.</h2>
-      <a href="https://www.charitywater.org/donate">Give $5. Make an Impact.</a>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="page-width final-content">
+        <h2 id="final-title">Be part of the change.</h2>
+        <a class="donate-button" href="https://www.charitywater.org/donate">Give $5. Make an Impact.</a>
+      </div>
     </section>
   </main>
+
+  <footer class="page-width site-footer">
+    <a href="https://www.charitywater.org/">charitywater.org</a>
+    <span> · </span>
+    <a href="https://www.charitywater.org/100-percent">100% Model</a>
+    <span> · </span>
+    <a href="https://www.charitywater.org/our-work">Our Work</a>
+  </footer>
 </body>
 </html>
